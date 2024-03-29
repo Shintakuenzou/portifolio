@@ -1,0 +1,57 @@
+{/* <div className="flex flex-col flex-1 w-full h-[500Dpx] bg-slate-950 rounded-md mt-20">
+          <div className="flex items-center gap-2 w-full h-6 p-2 border-b border-b-slate-800">
+            <div className="bg-red-700 hover:bg-red-600 w-2 h-2 rounded-full cursor-pointer transition-colors" />
+            <div className="bg-green-700 hover:bg-green-600 w-2 h-2 rounded-full cursor-pointer transition-colors" />
+            <div className="bg-yellow-700 hover:bg-yellow-600 w-2 h-2 rounded-full cursor-pointer transition-colors" />
+          </div>
+
+          <div className="flex w-full">
+            <div className="w-14 border-r border-r-slate-800 h-[475px]">
+              <ul className="flex flex-col items-center gap-5 pt-5">
+                <li className="text-slate-400">
+                  <FilePlus size={20} />
+                </li>
+                <li className="text-slate-400">
+                  <Search size={20} />
+                </li>
+                <li className="text-slate-400">
+                  <GitGraph size={20} />
+                </li>
+                <li className="text-slate-400">
+                  <BugPlay size={20} />
+                </li>
+                <li className="text-slate-400">
+                  <Blocks size={20} />
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex-1">
+              <img src={CodeBackground} className="w-full h-[500px]" />
+            </div>
+          </div>
+ </div> */}
+
+
+
+ // useEffect(() => {
+  //   if (!window.matchMedia("(prefers-reduced-motion): reduce").matches) {
+  //     addAnimation();
+  //     animationAddedRef.current = true;
+  //   }
+  // }, []);
+
+  // function addAnimation() {
+  //   const scrollers = document.querySelectorAll(".scroller");
+  //   scrollers.forEach((scroller) => {
+  //     scroller.setAttribute("data-animated", "true");
+  //     const scrollerInner = scroller.querySelector(".scroller__inner");
+  //     const scrollerContent = Array.from(scrollerInner!.children);
+
+  //     scrollerContent.forEach((item) => {
+  //       item.setAttribute("aria-hidden", "true");
+  //       const duplicatedItem = item.cloneNode(true);
+  //       scrollerInner!.appendChild(duplicatedItem);
+  //     });
+  //   });
+  // }
