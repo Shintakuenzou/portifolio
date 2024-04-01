@@ -11,8 +11,8 @@ export const navLinks = [
     path: "#about",
   },
   {
-    title: "Projects",
-    path: "#projects",
+    title: "Works",
+    path: "#works",
   },
   {
     title: "Contact",
@@ -59,11 +59,11 @@ export const socialMedia = [
   {
     title: "linkedin",
     link: "https://www.linkedin.com/in/felipe-enzou/",
-    icon: <Linkedin color="#FFF" />,
+    icon: <Linkedin color="#dac5a7" />,
   },
   {
     title: "github",
     link: "https://github.com/Shintakuenzou",
-    icon: <Github color="#FFF" />,
+    icon: <Github color="#dac5a7" />,
   },
 ];

@@ -1,21 +1,22 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
-import { SocialMedia } from "./social-media";
+import { Button } from "./button";
+import CV from "../assets/cv_enzou-shintaku.pdf";
 
 export function Header() {
   const words = [
     {
       text: "Front",
-      className: "dark:text-[#dac5a7] text-3xl lg:text-[38px] xl:text-[48px]",
+      className: "dark:text-[#dac5a7] text-3xl sm:text-4xl lg:text-[40px] xl:text-[48px]",
     },
     {
       text: "End",
-      className: "dark:text-[#dac5a7] text-3xl lg:text-[38px] xl:text-[48px]",
+      className: "dark:text-[#dac5a7] text-3xl sm:text-4xl lg:text-[40px] xl:text-[48px]",
     },
     {
       text: "Developer",
-      className: "dark:text-[#dac5a7] text-3xl lg:text-[38px] xl:text-[48px]",
+      className: "dark:text-[#dac5a7] text-3xl sm:text-4xl lg:text-[40px] xl:text-[48px]",
     },
   ];
 
@@ -32,8 +33,21 @@ export function Header() {
     },
   };
 
+  const buttonVariants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: (index: number) => ({
+      opacity: 1,
+      transition: {
+        duration: 0.7,
+        delay: index,
+      },
+    }),
+  };
+
   return (
-    <header className="-mt-20 flex h-full w-full flex-col items-center justify-center gap-5">
+    <header className="relative top-[150px] xl:top-[200px] flex w-full flex-col items-center justify-center gap-5">
       <div className="relative flex flex-col justify-start lg:w-[348px] xl:w-[450px]">
         <motion.h3
           className="flex max-w-[348px] items-center gap-1 text-base font-medium text-[#c5b297] xl:ml-0 xl:text-xl"
@@ -48,16 +62,28 @@ export function Header() {
         <div className="flex flex-col items-center justify-center">
           <TypewriterEffectSmooth words={words} className="" />
         </div>
+        <motion.div
+          custom={words.length}
+          variants={buttonVariants}
+          initial="initial"
+          animate="animate"
+          className="flex gap-5 items-center justify-center mt-5"
+        >
+          <Button variant="left" href={CV} download={CV}>
+            Download CV
+          </Button>
+          <Button variant="right" href="/contact">
+            Contact Me
+          </Button>
+        </motion.div>
+
+        <button
+          type="button"
+          className="flex justify-center items-center relative top-[150px] animate-bounce rounded-md focus:ring-4 focus:ring-[#c5b297]"
+        >
+          <ArrowDown color="#c5b297" />
+        </button>
       </div>
-
-      <SocialMedia transition={words.length} />
-
-      <button
-        type="button"
-        className="absolute top-[600px] animate-bounce rounded-md focus:ring-4 focus:ring-[#c5b297]"
-      >
-        <ArrowDown color="#c5b297" />
-      </button>
     </header>
   );
 }

@@ -1,32 +1,27 @@
 import { motion } from "framer-motion";
-import { socialMedia } from "../constants";
 
 interface SocialMediaProps {
-  transition: number;
+  transition?: number;
+  children: React.ReactNode;
+  href: string;
 }
 
-export function SocialMedia({ transition }: SocialMediaProps) {
+export function SocialMedia({ transition, children, href }: SocialMediaProps) {
   return (
-    <div className="absolute top-[500px] flex gap-5">
-      {socialMedia.map((app) => {
-        return (
-          <motion.a
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity: 1,
-              transition: { duration: 0.5, delay: transition },
-            }}
-            key={app.title}
-            href={app.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-lg bg-[#dac5a70d] p-3 shadow-lg outline-none transition-colors duration-300
-                hover:bg-[#877a680d] focus:ring-4 focus:ring-[#c5b297]"
-          >
-            {app.icon}
-          </motion.a>
-        );
-      })}
-    </div>
+    <>
+      <motion.a
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { duration: 0.5, delay: transition },
+        }}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-2 bg-[#1D1E1F] rounded-lg outline-none focus:ring-4 focus:ring-[#1D1E1F]"
+      >
+        {children}
+      </motion.a>
+    </>
   );
 }
