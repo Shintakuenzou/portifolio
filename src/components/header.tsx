@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { Button } from "./button";
-import CV from "../assets/cv_enzou-shintaku.pdf";
 
 export function Header() {
   const words = [
@@ -50,13 +49,13 @@ export function Header() {
     <header className="relative top-[150px] xl:top-[200px] flex w-full flex-col items-center justify-center gap-5">
       <div className="relative flex flex-col justify-start lg:w-[348px] xl:w-[450px]">
         <motion.h3
-          className="flex max-w-[348px] items-center gap-1 text-base font-medium text-[#c5b297] xl:ml-0 xl:text-xl"
+          className="flex max-w-[348px] items-center gap-1 text-base font-medium text-[#c5b297] xl:ml-0 xl:text-2xl"
           variants={textVariants}
           initial="initial"
           animate="animate"
         >
-          <div className="h-5 w-px bg-[#c5b297]" />
-          Hi! I'am Felipe
+          {/* <div className="h-5 w-px bg-[#c5b297]" /> */}
+          Olá, Meu Nome é Felipe
         </motion.h3>
 
         <div className="flex flex-col items-center justify-center">
@@ -69,20 +68,15 @@ export function Header() {
           animate="animate"
           className="flex gap-5 items-center justify-center mt-5"
         >
-          <Button variant="left" href={CV} download={CV}>
-            Download CV
-          </Button>
-          <Button variant="right" href="/contact">
-            Contact Me
-          </Button>
+          <Button variant="left">Download CV</Button>
         </motion.div>
 
-        <button
-          type="button"
-          className="flex justify-center items-center relative top-[150px] animate-bounce rounded-md focus:ring-4 focus:ring-[#c5b297]"
+        <a
+          href="#about"
+          className="flex justify-center items-center relative top-[150px] animate-bounce rounded-md focus:ring-4 focus:ring-[#c5b297] w-10 m-auto cursor-pointer"
         >
           <ArrowDown color="#c5b297" />
-        </button>
+        </a>
       </div>
     </header>
   );

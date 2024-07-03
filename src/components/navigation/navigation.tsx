@@ -30,9 +30,7 @@ export function Navigation({ type }: NavigationProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <ul
-        className={`${type === "row" ? "flex items-center gap-5" : "flex flex-col items-center justify-center gap-5"}`}
-      >
+      <ul className={`${type === "row" ? "flex items-center gap-5" : "flex flex-col items-center justify-center gap-5"}`}>
         {navLinks.map((navLink, index) => {
           return (
             <li key={index}>
@@ -52,13 +50,7 @@ export function Navigation({ type }: NavigationProps) {
               >
                 {navLink.title}
 
-                <div
-                  className={
-                    type === "row"
-                      ? "h-px w-0 transition-all duration-300 group-hover:w-full bg-[#dac5a7]"
-                      : ""
-                  }
-                />
+                <div className={type === "row" ? "h-px w-0 transition-all duration-300 group-hover:w-full bg-[#dac5a7]" : ""} />
               </motion.a>
             </li>
           );

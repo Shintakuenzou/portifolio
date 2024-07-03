@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
-    @apply h-screen w-full scroll-smooth bg-[#1D1E1F] antialiased;
+    @apply h-screen w-full bg-[#1D1E1F] antialiased;
     font-family: "Roboto";
   }
 }

@@ -41,13 +41,7 @@ export function NavigationToggleButton() {
 
       <AnimatePresence>
         {isActive && (
-          <motion.aside
-            variants={menuSlide}
-            initial="initial"
-            animate="enter"
-            exit="exit"
-            className="fixed right-0 top-0 h-screen w-full bg-[#dac5a7] z-40"
-          >
+          <motion.aside variants={menuSlide} initial="initial" animate="enter" exit="exit" className="fixed right-0 top-0 h-screen w-full bg-[#dac5a7] z-40">
             <div className="flex flex-col p-[100px] items-center justify-center w-full h-full gap-10">
               <Navigation type="column" />
 

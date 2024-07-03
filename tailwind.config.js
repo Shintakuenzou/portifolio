@@ -8,7 +8,8 @@ export default {
       },
       fontFamily: {
         lato: "Lato, sans-serif",
-        Merriweather: "Merriweather,sans-serif"
+        Merriweather: "Merriweather,sans-serif",
+        BonaNovaSC: "Bona Nova SC",
       },
     },
   },

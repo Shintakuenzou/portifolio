@@ -1,10 +1,12 @@
-import HTML5 from "./html5.svg";
-import CSS3 from "./css.svg";
-import JS from "./javascript.svg";
-import TS from "./typescript.svg";
-import Reactjs from "./React.svg";
-import NextJs from "./next.png";
-import TailwindCSS from "./tailwindcss.svg";
-import Redux from "./redux.svg";
+import HTML from "./html.png";
+import CSS from "./css.png";
+import JS from "./javascript.png";
+import TS from "./typescript.png";
+import ReactJS from "./reactjs.png";
+import GIT from "./git.png";
+import Redux from "./redux.png";
+import Tailwind from "./tailwind.png";
+import NextJS from "./nextjs.png";
+import FramerMotion from "./framer-motion.png";
 
-export { HTML5, CSS3, JS, TS, Reactjs, NextJs, TailwindCSS, Redux };
+export { HTML, CSS, JS, TS, ReactJS, GIT, Redux, Tailwind, NextJS, FramerMotion };

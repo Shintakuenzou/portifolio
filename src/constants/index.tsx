@@ -1,5 +1,4 @@
 import { Github, Linkedin } from "lucide-react";
-import { CSS3, HTML5, JS, NextJs, Reactjs, Redux, TS, TailwindCSS } from "../assets";
 
 export const navLinks = [
   {
@@ -20,38 +19,59 @@ export const navLinks = [
   },
 ];
 
+export const biographys = [
+  {
+    bio: "Olá!",
+  },
+  {
+    bio: `Meu nome é Felipe, sou um engenheiro front-end com base no Brasil. 
+    Em 2022, concluí minha formação em análise e desenvolvimento de sistemas e desde então tenho me dedicado a aprimorar minhas habilidades e conhecimentos no mundo do 
+    desenvolvimento web.`,
+  },
+  {
+    bio: `Minha paixão está em transformar conceitos abstratos em interfaces funcionais e atraentes. Adoro criar soluções que proporcionem uma experiência 
+    incrível para os usuários. Seja otimizando o desempenho de um site ou desenvolvendo animações suaves, estou sempre em busca de desafios estimulantes.`,
+  },
+  {
+    bio: `Embora meu foco principal seja o frontend, tenho interesse em explorar tecnologias no backend para ampliar minha compreensão do 
+    ecossistema completo. Acredito que essa abordagem multidisciplinar é essencial para alcançar meus objetivos profissionais e contribuir de forma 
+    significativa para projetos inovadores.`,
+  },
+  {
+    bio: `Atualmente trabalho como desenvolvedor frontend.`,
+  },
+];
+
 export const techs = [
   {
-    path: HTML5,
-    color: "bg-orange-500 rounded-lg",
+    title: "HTML",
   },
   {
-    path: CSS3,
-    color: "bg-blue-500 rounded-lg",
+    title: "CSS",
   },
   {
-    path: JS,
-    color: "bg-yellow-500 rounded-lg",
+    title: "JavaScript",
   },
   {
-    path: TS,
-    color: "bg-sky-500 rounded-lg",
+    title: "TypeScript",
   },
   {
-    path: Reactjs,
-    color: "bg-zinc-700 rounded-lg",
+    title: "Reactjs",
   },
   {
-    path: NextJs,
-    color: "bg-white rounded-lg",
+    title: "GIT",
   },
   {
-    path: TailwindCSS,
-    color: "bg-white rounded-lg",
+    title: "Redux",
   },
   {
-    path: Redux,
-    color: "bg-white rounded-lg",
+    title: "Nextjs",
+  },
+  {
+    title: "TailwindCSS",
+  },
+  {
+    title: "Framer Motion",
   },
 ];
 
@@ -65,5 +85,14 @@ export const socialMedia = [
     title: "github",
     link: "https://github.com/Shintakuenzou",
     icon: <Github color="#dac5a7" />,
+  },
+];
+
+export const services = [
+  {
+    title: "Web Developer",
+  },
+  {
+    title: "Coming Soon...",
   },
 ];
