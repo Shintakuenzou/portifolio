@@ -14,14 +14,14 @@ export function Projects() {
   // }, []);
 
   return (
-    <section className="flex flex-col justify-start mt-10 px-16 py-16" id="about">
+    <section className="flex flex-col justify-start mt-10 " id="about">
       <div className="mb-10 flex justify-center">
         <h3 id="#about" className="text-[#c5b297] text-2xl font-semibold">
           &lt; My Works &gt;
         </h3>
       </div>
 
-      <div className="grid grid-cols-2 flex-wrap gap-5 items-center justify-center px-12">
+      <div className="grid xl:grid-cols-2 flex-wrap gap-5 items-center justify-center px-12 grid-cols-1">
         <Cards />
         <Cards />
       </div>

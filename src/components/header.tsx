@@ -49,7 +49,7 @@ export function Header() {
     <header className="relative top-[150px] xl:top-[200px] flex w-full flex-col items-center justify-center gap-5">
       <div className="relative flex flex-col justify-start lg:w-[348px] xl:w-[450px]">
         <motion.h3
-          className="flex max-w-[348px] items-center gap-1 text-base font-medium text-[#c5b297] xl:ml-0 xl:text-2xl"
+          className="flex max-w-[348px] max-sm:w-[278px] md:w-[331px] items-center gap-1 text-base font-medium text-[#c5b297] xl:ml-0 xl:text-2xl"
           variants={textVariants}
           initial="initial"
           animate="animate"

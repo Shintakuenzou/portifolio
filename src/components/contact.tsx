@@ -1,7 +1,7 @@
 export function Contect() {
   return (
-    <section className="flex flex-col justify-start mt-10 p-28">
-      <h3 className="text-6xl text-[#c5b297] font-medium font-BonaNovaSC">Contact Us</h3>
+    <section className="flex flex-col justify-start mt-10 p-28 max-md:p-10">
+      <h3 className="text-6xl max-md:text-3xl text-[#c5b297] font-medium font-BonaNovaSC">Contact Us</h3>
 
       <form action="" className="mt-10 flex gap-52">
         <div className="flex flex-col max-w-lg gap-10 flex-1">
