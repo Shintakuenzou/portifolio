@@ -13,6 +13,8 @@ If you are developing a production application, we recommend updating the config
 
 - Configure the top-level `parserOptions` property like this:
 
+LINK: https://courageous-wisp-52b7e7.netlify.app/?
+
 ```js
 export default {
   // other rules...
