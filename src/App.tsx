@@ -1,37 +1,25 @@
-import { Navigation } from "./components/navigation/navigation";
-import { Header } from "./components/header";
-import { NavigationToggleButton } from "./components/navigation/navigation-toggle-button";
-import { LogoColorContext } from "./context/global-context";
-import { useContext } from "react";
-import { About } from "./components/about";
-import { Projects } from "./components/projects";
-import { Contect } from "./components/contact";
+import { Nav } from "./components/navigation/nav";
+import { Header } from "./components/header/header";
+import { About } from "./components/sections/about/about";
+import { Project } from "./components/sections/project/project";
 
 export function App() {
-  const { isActive } = useContext(LogoColorContext);
-
   return (
-    <>
-      <div className="h-screen w-full">
-        <div className="flex items-center">
-          <a
-            href="/"
-            className={`font-lato fixed z-50 m-5 text-2xl font-bold ${isActive ? "text-[#1D1E1F] hover:text-[#1D1E1F]" : "text-[#dac5a7] hover:text-[#b4a18c]"} `}
-          >
-            S
-          </a>
+    <div className="space-y-20">
+      <Nav />
+      <Header />
+      <main className="flex flex-col justify-center space-y-10">
+        <About />
+        <Project />
+        <section className="p-10 bg-zinc-950 space-y-5">
+          <h3 className="font-semibold text-3xl text-white">Contact</h3>
 
-          <Navigation type="row" />
-
-          <NavigationToggleButton />
-        </div>
-
-        <Header />
-      </div>
-
-      <About />
-      <Projects />
-      <Contect />
-    </>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sapiente error iusto, maiores totam placeat rerum animi possimus consectetur, sed
+            earum similique porro a dignissimos pariatur eaque nobis eius. Repellat.
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
